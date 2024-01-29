@@ -1,0 +1,11 @@
+# docker-compose.yml
+version: '3'
+
+services:
+  mysql-db:
+    image: mysql:8.3.0
+    environment:
+      MYSQL_ROOT_PASSWORD: senha-mysql
+      MYSQL_DATABASE: meuBanco
+    ports:
+      - "3306:3306"
